@@ -141,7 +141,7 @@ Tac
 
 Bien. Nous avons une classe qui nous permet de manipuler des tâches en cours
 d'exécution, ces tâches étant implémentées sous la forme de coroutines. Il ne
-nous reste plus qu'à trouver un moyen d'exécuter plusieurs coroutines de façon
+nous reste plus qu'à trouver un moyen d'exécuter plusieurs tâches de façon
 **concurrente**, c'est-à-dire en parallèle les unes des autres.
 
 Pour cela, il suffit de construire une *file d'attente* de tâches à exécuter.
