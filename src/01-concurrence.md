@@ -55,13 +55,13 @@ StopIteration: Boum!
 Lorsque la tâche est terminée, une exception `StopIteration` est levée.
 Celle-ci contient la valeur de retour de la coroutine. Jusqu'ici, rien de bien
 sorcier. Dès lors, on peut imaginer créer une petite boucle pour exécuter cette
-coroutine jusqu'à épuisement :
+coroutine *jusqu'à épuisement* :
 
 ```python
 >>> task = tic_tac()
 >>> while True:
 ...     try:
-...         next(task)
+...         next(task)  # On exécute la coroutine
 ...     except StopIteration as stop:
 ...         print("valeur de retour:", repr(stop.value))
 ...         break
